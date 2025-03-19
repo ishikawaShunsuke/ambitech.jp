@@ -12,8 +12,6 @@
 	--box-shadow: 0 8px 22px rgba(0, 0, 0, 0.2);
 }
 
-
-
 body {
 	font-family: Sora, Noto Sans JP, "sans-serif";
 	line-height: 1.6;
@@ -29,109 +27,63 @@ body {
 	padding: 0;
 	background: rgb(255, 255, 255);
 }
-
 .loading.hide {
 	box-sizing: border-box;
 	opacity: 0;
 	pointer-events: none;
 	transition: opacity 1000ms;
 }
-
-.spinner {
-
-	box-sizing: border-box;
-	height: 50px;
-	width: 50px;
-	position: relative;
-	top: 50%;
-	left: 46.5%;
-	background-color: rgb(255, 0, 0);
-	border: 10px solid rgb(255, 0, 0);
-	border-radius: 2px;
-	animation: spinner 4s infinite ease;
+.loader {
+  width: 60px;
+  height: 60px;
+  margin-top: 400px;
+  transform: translate(-50%,-50%);
 }
 
-
-
-.inner {
-
-
-	background-color: rgb(255, 255, 255);
-	box-sizing: border-box;
-	vertical-align: top;
-	display: inline-block;
-	border-radius: 100%;
-	width: 100%;
-	height: 100%;
-	opacity: 1;
-
-	animation: spinner-inner 4s infinite;
+.loader div {
+  width: 20px;
+  height: 20px;
+  float: left;
+  display: flex;
+  justify-content: center;
+  align-content:  center;
+  align-items: center;
+  position: relative;
 }
 
-
-
-
-@keyframes spinner {
-	0% {
-		transform: rotate(0deg);
-	}
-
-	25% {
-		transform: rotate(90deg);
-	}
-
-	50% {
-		transform: rotate(180deg);
-	}
-
-	75% {
-		transform: rotate(270deg);
-	}
-
-	100% {
-		transform: rotate(360deg);
-	}
+span {
+  position: absolute;
+  display: block;
+  border-radius: 3px;
+  animation: anim 1.2s infinite;
+  animation-timing-function: linear;
 }
 
-@keyframes spinner-inner {
-	0% {
-		border-radius: 100%;
-		
-	}
-
-	16.7% {
-		border-radius: 0%;
-		transform: rotate(45deg);
-	}
-
-	33.4% {
-		border-radius: 100%;
-
-	}
-
-	50.1% {
-		border-radius: 0%;
-		transform: rotate(135deg);
-	}
-
-	66.8% {
-		border-radius: 100%;
-
-	}
-
-	83.5% {
-		border-radius: 0%;
-		transform: rotate(225deg);
-	}
-
-	100% {
-		border-radius: 100%;
-
-	}
-
-
+@keyframes anim {
+  0% { width:0px; height:0px; background-color: red;}
+  40% { width:15px; height:15px; background-color: red;}
+  80% { width:0px; height:0px; background-color: red;}
 }
 
+.loader div:nth-child(2) span,
+.loader div:nth-child(4) span {
+  animation-delay: 0.15s;
+}
+
+.loader div:nth-child(3) span,
+.loader div:nth-child(5) span,
+.loader div:nth-child(7) span {
+  animation-delay: 0.30s;
+}
+
+.loader div:nth-child(6) span,
+.loader div:nth-child(8) span {
+  animation-delay: 0.45s;
+}
+
+.loader div:nth-child(9) span {
+  animation-delay: 0.60s;
+}
 
 h1,
 h2,
@@ -254,7 +206,7 @@ li.nav-item.dropdown>ul>li>a {
 }
 
 #down::before {
-	transition: 0.3s;
+	transition: 0.1s;
 
 }
 
@@ -698,8 +650,6 @@ form .form-control {
 
 }
 
-
-
 .arrow {
 	position: fixed;
 	z-index: 100;
@@ -746,14 +696,6 @@ footer button:hover i {
 	-webkit-transform: translate(-50%, -65%);
 	transform: translate(-50%, -65%)
 }
-
-
-
-
-/*footer p , body > footer > div > div > div > div:nth-child(4) > ul > li {*/
-/*	color: white;*/
-/*	line-height: 1.2rem;*/
-/*}*/
 
 .hover-red:hover {
 	color: red;
