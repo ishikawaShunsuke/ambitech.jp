@@ -48,7 +48,6 @@ function scroll_event() {
 };
 
 
-
 btn.addEventListener('click', () => {
 	nav.classList.toggle('collapsed');
 
@@ -62,7 +61,7 @@ window.addEventListener('click', function() {
 	//5秒後に追加したstyleを削除
 	setTimeout(function() {
 		obj.setAttribute("style", "")
-	}, "400");
+	}, "600");
 });
 
 window.addEventListener('load', () => {
