@@ -126,7 +126,6 @@ img {
 
 .navbar {
 	box-shadow: var(--box-shadow);
-
 }
 
 #navbarNav>ul>li.nav-item.dropdown>ul {
@@ -729,8 +728,6 @@ footer button:hover i {
 
 	#hello p {
 		font-size: 1rem;
-
-
 	}
 
 	#rookie a,
