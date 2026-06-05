@@ -21,6 +21,21 @@ toggler.addEventListener('click', () => {
     }
 });
 
+document.addEventListener('click', (e) => {
+    const toggler = document.querySelector('.navbar-toggler');
+    const expanded = toggler.getAttribute('aria-expanded') === 'true';
+    const nav = document.getElementById('navbarNav');
+
+    // すでに閉じているなら何もしない
+    if (!expanded) return;
+
+    // クリックした場所がメニューでもトグルボタンでもない場合 → 閉じる
+    if (!nav.contains(e.target) && !toggler.contains(e.target)) {
+        const bsCollapse = new bootstrap.Collapse(nav, { toggle: false });
+        bsCollapse.hide();
+    }
+});
+
 //クリックイベントを追加
 scroll_to_top_btn.addEventListener('click', scroll_to_top);
 
