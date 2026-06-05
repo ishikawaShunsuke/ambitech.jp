@@ -9,28 +9,21 @@ const loading = document.querySelector('.loading');
 const nav = document.getElementById('navbarNav');
 const toggler = document.querySelector('.navbar-toggler');
 
-toggler.addEventListener('click', () => {
+toggler.addEventListener('click', (e) => {
     const expanded = toggler.getAttribute('aria-expanded') === 'true';
 
     if (expanded) {
         // 開いた → ✖ にする
         btn.classList.add('open');
+		
     } else {
         // 閉じた → 3本線に戻す
         btn.classList.remove('open');
-    }
-});
 
-document.querySelector('.toggle-btn').addEventListener('click', (e) => {
-    const expanded = toggler.getAttribute('aria-expanded') === 'true';
-    // すでに閉じているなら何もしない
-    if (!expanded) return;
-    // クリックした場所がメニューでもトグルボタンでもない場合 → 閉じる
-    if (!nav.contains(e.target) && !toggler.contains(e.target)) {
+		if (!nav.contains(e.target) && !toggler.contains(e.target)) {
         const bsCollapse = new bootstrap.Collapse(nav, { toggle: false });
         bsCollapse.hide();
-		
-		e.stopPropagation();
+    }
     }
 });
 
