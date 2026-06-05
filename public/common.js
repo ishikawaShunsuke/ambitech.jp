@@ -4,7 +4,6 @@ const menu = document.querySelector("#navbarNav > ul > li.nav-item.dropdown > a"
 const down = document.querySelector("#down");
 let btn = document.querySelector(".toggle-btn");
 let navbar = document.querySelector("#navbarNav");
-let nav = document.querySelector(".navbar-toggler");
 let body =document.querySelector("body");
 const loading = document.querySelector('.loading');
 const nav = document.getElementById('navbarNav');
@@ -67,7 +66,7 @@ function scroll_event() {
 
 
 btn.addEventListener('click', () => {
-	nav.classList.toggle('collapsed');
+	toggler.classList.toggle('collapsed');
 
 });
 
