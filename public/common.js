@@ -2,16 +2,12 @@
 const scroll_to_top_btn = document.querySelector("button.arrow");
 const menu = document.querySelector("#navbarNav > ul > li.nav-item.dropdown > a");
 const down = document.querySelector("#down");
-let btn = document.querySelector(".toggle-btn");
+const btn = document.querySelector(".toggle-btn");
 let navbar = document.querySelector("#navbarNav");
 let body =document.querySelector("body");
 const loading = document.querySelector('.loading');
 const nav = document.getElementById('navbarNav');
 const toggler = document.querySelector('.navbar-toggler');
-
-toggler.addEventListener('blur', () => {
-    down.classList.remove('open');
-});
 
 toggler.addEventListener('click', () => {
     const expanded = toggler.getAttribute('aria-expanded') === 'true';
