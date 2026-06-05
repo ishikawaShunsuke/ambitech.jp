@@ -778,14 +778,7 @@ footer button:hover i {
     align-items: center;
 	}
 
-	#down::before {
-    	content: "";
-    	transform: rotate(0deg);
-	}
-
-	#down .active::before {
-    	transform: rotate(180deg);
-	}
+	
 	/*
 	#navbarNav > ul > li.nav-item.dropdown > ul > li:nth-child(1) > a > i {
 			margin-left: 82%;
