@@ -22,13 +22,9 @@ toggler.addEventListener('click', () => {
 });
 
 document.addEventListener('click', (e) => {
-    const toggler = document.querySelector('.navbar-toggler');
-    const expanded = toggler.getAttribute('aria-expanded') === 'true';
-    const nav = document.getElementById('navbarNav');
-
+    const isExpanded = toggler.getAttribute('aria-expanded') === 'true';
     // すでに閉じているなら何もしない
     if (!expanded) return;
-
     // クリックした場所がメニューでもトグルボタンでもない場合 → 閉じる
     if (!nav.contains(e.target) && !toggler.contains(e.target)) {
         const bsCollapse = new bootstrap.Collapse(nav, { toggle: false });
