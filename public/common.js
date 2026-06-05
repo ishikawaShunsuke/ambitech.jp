@@ -25,10 +25,12 @@ document.addEventListener('click', (e) => {
     const isExpanded = toggler.getAttribute('aria-expanded') === 'true';
     // すでに閉じているなら何もしない
     if (!isExpanded) return;
-    // クリックした場所がメニューでもトグルボタンでもない場合 → 閉じる
+    // クリックした場所がメニューでもトグルボタンでもない場合 → 閉じてバツボタンを戻す
     if (!nav.contains(e.target) && !toggler.contains(e.target)) {
         const bsCollapse = new bootstrap.Collapse(nav, { toggle: false });
         bsCollapse.hide();
+		
+		btn.classList.remove('open');
     }
 });
 
