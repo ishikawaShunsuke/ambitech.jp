@@ -25,13 +25,15 @@ nav.addEventListener('hidden.bs.collapse', () => {
     toggler.disabled = false;
 });
 
+btn.addEventListener('click', () => {
+    nav.classList.toggle('collapsed');
+});
 
-/*
 menu.addEventListener('click', () => {
 	down.classList.toggle('open');
 
 });
-*/
+
 
 menu.addEventListener('blur', () => {
 	down.classList.remove('open');
