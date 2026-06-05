@@ -691,10 +691,10 @@ footer button:hover i {
 	left:16px;
 }
 
-.custom-toggler .navbar-toggler-icon {
+/*.custom-toggler .navbar-toggler-icon {
     background-image: none !important;
 }
-
+*/
 @media screen and (max-width:798px) {
 
 	#business {
