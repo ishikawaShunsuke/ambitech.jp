@@ -779,7 +779,7 @@ footer button:hover i {
 	}
 	
 	#down .flipped {
-    transform: scaleX(-1);
+    transform: scaleY(-1);
 	}
 /*
 	#navbarNav > ul > li.nav-item.dropdown > ul > li:nth-child(1) > a > i {
