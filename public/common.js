@@ -2,7 +2,7 @@
 const scroll_to_top_btn = document.querySelector("button.arrow");
 const menu = document.querySelector("#navbarNav > ul > li.nav-item.dropdown > a");
 const down = document.querySelector("#down");
-const btn = document.querySelector(".toggle-btn");
+const btn = document.querySelector('.toggle-btn');
 let navbar = document.querySelector("#navbarNav");
 let body =document.querySelector("body");
 const loading = document.querySelector('.loading');
@@ -22,7 +22,7 @@ toggler.addEventListener('click', () => {
 
 document.addEventListener('click', (e) => {
     const expanded = toggler.getAttribute('aria-expanded') === 'true';
-	const closeBtn = document.querySelector(".toggle-btn open");
+	const closeBtn = document.querySelector('.toggle-btn.open');
     // すでに閉じているなら何もしない
     if (!expanded) return;
 
