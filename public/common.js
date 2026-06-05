@@ -48,6 +48,8 @@ function scroll_event() {
 
 window.addEventListener('load', () => {
 	loading.classList.add('hide');
+	const toggler = document.querySelector('.navbar-toggler');
+    toggler.offsetHeight; 
 }, false);
 
 ityped.init(document.querySelector("#hello h2"), {
