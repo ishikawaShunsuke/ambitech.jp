@@ -18,7 +18,7 @@ body {
 	color: var(--body);
 }
 
-.loading {
+/*.loading {
 	position: fixed;
 	z-index: 1100;
 	width: 100%;
@@ -26,7 +26,21 @@ body {
 	margin: 0;
 	padding: 0;
 	background: rgb(255, 255, 255);
+}*/
+
+.loading {
+	position: fixed;
+	top: 0;
+    left: 0;
+	z-index: 1100;
+	width: 100vw;
+    height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: rgb(255, 255, 255);
 }
+
 .loading.hide {
 	box-sizing: border-box;
 	opacity: 0;
