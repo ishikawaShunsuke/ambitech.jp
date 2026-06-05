@@ -29,10 +29,6 @@ document.addEventListener('click', (e) => {
     }
 });
 
-down.addEventListener('click', () => {
-    down.classList.toggle('active');
-});
-
 //クリックイベントを追加
 scroll_to_top_btn.addEventListener('click', scroll_to_top);
 
