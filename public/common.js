@@ -24,7 +24,7 @@ toggler.addEventListener('click', () => {
 document.addEventListener('click', (e) => {
     const isExpanded = toggler.getAttribute('aria-expanded') === 'true';
     // すでに閉じているなら何もしない
-    if (!expanded) return;
+    if (!isExpanded) return;
     // クリックした場所がメニューでもトグルボタンでもない場合 → 閉じる
     if (!nav.contains(e.target) && !toggler.contains(e.target)) {
         const bsCollapse = new bootstrap.Collapse(nav, { toggle: false });
