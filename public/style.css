@@ -657,18 +657,18 @@ footer button:hover i {
 }
 
 
-.navbar-toggler.collapsed span:nth-child(1) {
+.toggle-btn.open span:nth-child(1) {
 	transform: rotate(225deg) translateY(-10px) translateX(-4px);
 
 
 }
 
-.navbar-toggler.collapsed span:nth-child(2) {
+.toggle-btn.open span:nth-child(2) {
 	opacity: 0;
 	transition: 0s;
 }
 
-.navbar-toggler.collapsed span:nth-child(3) {
+.toggle-btn.open span:nth-child(3) {
 	transform: rotate(-225deg) translateY(21px) translateX(8px);
 	width:30px;
 }
