@@ -8,8 +8,8 @@ let body =document.querySelector("body");
 const loading = document.querySelector('.loading');
 const nav = document.getElementById('navbarNav');
 const toggler = document.querySelector('.navbar-toggler');
-/*
-toggler.addEventListener('click', (e) => {
+
+toggler.addEventListener('click', () => {
     const expanded = toggler.getAttribute('aria-expanded') === 'true';
 
     if (expanded) {
@@ -18,7 +18,19 @@ toggler.addEventListener('click', (e) => {
 	} else {
         btn.classList.remove('open');
     }
-});*/
+});
+
+document.addEventListener('click', (e) => {
+    const isExpanded = toggler.getAttribute('aria-expanded') === 'true';
+    // すでに閉じているなら何もしない
+    if (!isExpanded) return;
+    // クリックした場所がメニューでもトグルボタンでもない場合 → 閉じる
+    if (!nav.contains(e.target) && !toggler.contains(e.target)) {
+        const bsCollapse = new bootstrap.Collapse(nav, { toggle: false });
+        bsCollapse.hide();
+		btn.classList.remove('open');
+    }
+});
 
 //クリックイベントを追加
 scroll_to_top_btn.addEventListener('click', scroll_to_top);
@@ -75,30 +87,4 @@ ityped.init(document.querySelector("#hello p"), {
 	  showCursor: false,
 	  backDelay:  3000
 
-});
-
-toggler.addEventListener('click', () => {
-    const expanded = toggler.getAttribute('aria-expanded') === 'true';
-
-    // アニメーション制御
-    const toggleBtn = document.querySelector('.toggle-btn');
-    if (expanded) {
-        toggleBtn.classList.add('open');   // ✖ にする
-    } else {
-        toggleBtn.classList.remove('open'); // 3本線に戻す
-    }
-});
-
-// ✖ボタンを押した時に collapse を閉じる
-document.querySelector('.toggle-btn').addEventListener('click', (e) => {
-    const expanded = toggler.getAttribute('aria-expanded') === 'true';
-
-    // メニューが開いている状態で ✖ を押したら閉じる
-    if (expanded) {
-        const bsCollapse = new bootstrap.Collapse(nav, { toggle: false });
-        bsCollapse.hide();
-    }
-
-    // ボタン内のクリックが親に伝播して二重処理にならないように
-    e.stopPropagation();
 });
