@@ -16,13 +16,11 @@ toggler.addEventListener('click', (e) => {
         // 開いた → ✖ にする
         btn.classList.add('open');
 		
-    } else {
-        // 閉じた → 3本線に戻す
-        btn.classList.remove('open');
-
-		if (!nav.contains(e.target) && !toggler.contains(e.target)) {
+    } else if (!nav.contains(e.target) && !toggler.contains(e.target)) {
         const bsCollapse = new bootstrap.Collapse(nav, { toggle: false });
-        bsCollapse.hide();
+		// 閉じた → 3本線に戻す
+        btn.classList.remove('open');
+		bsCollapse.hide();
     }
     }
 });
