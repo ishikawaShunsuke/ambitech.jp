@@ -778,8 +778,8 @@ footer button:hover i {
     align-items: center;
 	}
 	
-	#down .flipped {
-    transform: scaleY(-1);
+	.flipped {
+    transform: rotate(180deg);
 	}
 /*
 	#navbarNav > ul > li.nav-item.dropdown > ul > li:nth-child(1) > a > i {
