@@ -14,7 +14,7 @@ toggler.addEventListener('blur', () => {
 });
 
 toggler.addEventListener('click', () => {
-    const expanded = toggler.getAttribute('aria-expanded');
+    const expanded = toggler.getAttribute('aria-expanded') === 'true';
 
     if (expanded) {
         // 開いた → ✖ にする
