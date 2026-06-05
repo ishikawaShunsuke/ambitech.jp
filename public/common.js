@@ -27,10 +27,11 @@ nav.addEventListener('hidden.bs.collapse', () => {
 
 
 
-/*menu.addEventListener('click', () => {
+menu.addEventListener('click', () => {
 	down.classList.toggle('open');
 
 });
+/*
 menu.addEventListener('blur', () => {
 	down.classList.remove('open');
 
