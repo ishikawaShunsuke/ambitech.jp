@@ -48,7 +48,8 @@ function scroll_event() {
 
 window.addEventListener('load', () => {
 	loading.classList.add('hide');
-	toggler.offsetHeight; 
+	loading.style.pointerEvents = 'none';
+    loading.style.zIndex = '-1';
 }, false);
 
 ityped.init(document.querySelector("#hello h2"), {
