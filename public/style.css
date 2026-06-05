@@ -50,9 +50,7 @@ body {
 .loader {
   width: 60px;
   height: 60px;
-  margin-top: 400px;
-  transform: translate(-50%,-50%);
-}
+ }
 
 .loader div {
   width: 20px;
