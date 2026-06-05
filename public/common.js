@@ -25,6 +25,15 @@ nav.addEventListener('hidden.bs.collapse', () => {
     toggler.disabled = false;
 });
 */
+
+menu.addEventListener('blur', () => {
+    down.classList.remove('open');
+});
+
+btn.addEventListener('click', () => {
+    nav.classList.toggle('collapsed');
+});
+
 //クリックイベントを追加
 scroll_to_top_btn.addEventListener('click', scroll_to_top);
 
