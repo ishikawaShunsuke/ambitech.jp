@@ -760,7 +760,7 @@ footer button:hover i {
 	#navbarNav a {
 		margin: 7px 0;
 	}
-
+/*
 	#navbarNav > ul > li.nav-item.dropdown > ul > li:nth-child(1) > a > i {
 			margin-left: 82%;
 	}
@@ -769,5 +769,5 @@ footer button:hover i {
 	}
 	#navbarNav > ul > li.nav-item.dropdown > ul > li:nth-child(3) > a > i {
 			margin-left: 63%;
-	}
+	}*/
 }
