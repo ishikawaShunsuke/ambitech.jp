@@ -8,7 +8,7 @@ let body =document.querySelector("body");
 const loading = document.querySelector('.loading');
 const nav = document.getElementById('navbarNav');
 const toggler = document.querySelector('.navbar-toggler');
-
+/*
 nav.addEventListener('show.bs.collapse', () => {
     toggler.disabled = true;
 });
@@ -24,10 +24,7 @@ nav.addEventListener('hide.bs.collapse', () => {
 nav.addEventListener('hidden.bs.collapse', () => {
     toggler.disabled = false;
 });
-
-btn.addEventListener('click', () => {
-    nav.classList.toggle('collapsed');
-});
+*/
 
 menu.addEventListener('click', () => {
 	down.classList.toggle('open');
@@ -38,6 +35,10 @@ menu.addEventListener('click', () => {
 menu.addEventListener('blur', () => {
 	down.classList.remove('open');
 
+});
+
+btn.addEventListener('click', () => {
+    nav.classList.toggle('collapsed');
 });
 
 //クリックイベントを追加
