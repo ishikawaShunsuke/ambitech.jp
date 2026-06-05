@@ -30,7 +30,7 @@ document.addEventListener('click', (e) => {
 });
 
 down.addEventListener('click', () => {
-    down.classList.toggle('flipped');
+    down.classList.toggle('active');
 });
 
 //クリックイベントを追加
