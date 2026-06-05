@@ -22,15 +22,13 @@ toggler.addEventListener('click', () => {
 
 document.addEventListener('click', (e) => {
     const expanded = toggler.getAttribute('aria-expanded') === 'true';
-	const closeBtn = document.querySelector('.toggle-btn.open');
-    // すでに閉じているなら何もしない
+	// すでに閉じているなら何もしない
     if (!expanded) return;
-
     // クリックした場所がメニューでもトグルボタンでもない場合 → 閉じる
     if (!nav.contains(e.target) && !toggler.contains(e.target)) {
         const bsCollapse = new bootstrap.Collapse(nav, { toggle: false });
         bsCollapse.hide();
-		closeBtn.classList.remove('open');
+		btn.classList.remove('open');
     }
 });
 
