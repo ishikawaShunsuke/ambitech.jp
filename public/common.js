@@ -13,6 +13,18 @@ toggler.addEventListener('blur', () => {
     down.classList.remove('open');
 });
 
+toggler.addEventListener('click', () => {
+    const expanded = toggler.getAttribute('aria-expanded') === 'true';
+
+    if (expanded) {
+        // 開いた → ✖ にする
+        btn.classList.add('open');
+    } else {
+        // 閉じた → 3本線に戻す
+        btn.classList.remove('open');
+    }
+});
+
 //クリックイベントを追加
 scroll_to_top_btn.addEventListener('click', scroll_to_top);
 
