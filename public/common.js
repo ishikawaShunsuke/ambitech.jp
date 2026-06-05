@@ -64,18 +64,6 @@ function scroll_event() {
 
 };
 
-
-window.addEventListener('click', function() {
-	//bodyタグを取得
-	let obj = document.querySelector("body");
-	//bodyタグにクリックイベントを無効化するstyleを追加
-	obj.setAttribute("style", "pointer-events: none;");
-	//5秒後に追加したstyleを削除
-	setTimeout(function() {
-		obj.setAttribute("style", "")
-	}, "600");
-});
-
 window.addEventListener('load', () => {
 	loading.classList.add('hide');
 }, false);
