@@ -1,10 +1,7 @@
 
-const scroll_to_top_btn = document.querySelector("button.arrow");
-const menu = document.querySelector("#navbarNav > ul > li.nav-item.dropdown > a");
+const scroll_to_top_btn = document.querySelector('button.arrow');
 const down = document.querySelector("#down");
 const btn = document.querySelector('.toggle-btn');
-let navbar = document.querySelector("#navbarNav");
-let body =document.querySelector("body");
 const loading = document.querySelector('.loading');
 const nav = document.getElementById('navbarNav');
 const toggler = document.querySelector('.navbar-toggler');
@@ -30,6 +27,10 @@ document.addEventListener('click', (e) => {
         bsCollapse.hide();
 		btn.classList.remove('open');
     }
+});
+
+down.addEventListener('click', () => {
+    down.classList.toggle('flipped');
 });
 
 //クリックイベントを追加
