@@ -21,7 +21,7 @@ toggler.addEventListener('click', () => {
     }
 });
 
-document.addEventListener('click', (e) => {
+document.querySelector('.toggle-btn').addEventListener('click', (e) => {
     const expanded = toggler.getAttribute('aria-expanded') === 'true';
     // すでに閉じているなら何もしない
     if (!expanded) return;
