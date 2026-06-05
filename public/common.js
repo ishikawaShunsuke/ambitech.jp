@@ -65,11 +65,6 @@ function scroll_event() {
 };
 
 
-btn.addEventListener('click', () => {
-	toggler.classList.toggle('collapsed');
-
-});
-
 window.addEventListener('click', function() {
 	//bodyタグを取得
 	let obj = document.querySelector("body");
