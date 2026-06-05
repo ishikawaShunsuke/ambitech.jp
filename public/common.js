@@ -9,6 +9,8 @@ const loading = document.querySelector('.loading');
 const nav = document.getElementById('navbarNav');
 const toggler = document.querySelector('.navbar-toggler');
 
+toggler.setAttribute('aria-expanded', 'false');
+
 nav.addEventListener('show.bs.collapse', () => {
     toggler.disabled = true;
 });
