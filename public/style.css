@@ -779,22 +779,13 @@ footer button:hover i {
     	justify-content: space-between;
     	align-items: center;
 	}
-
-	.dropdown-menu .dropdown-item i {
-   		
-	}
 	
 	#navbarNav > ul > li.nav-item.dropdown > ul > li:nth-child(1) > a {
 	
 	}
 
-	#navbarNav > ul > li.nav-item.dropdown > ul > li:nth-child(2) > a {
-		position: relative;
-	}
-
 	#navbarNav > ul > li.nav-item.dropdown > ul > li:nth-child(2) > a > i {
-		position: absolute;
-		left: 50vw;
+		margin-left: 40%;
 	}
 
 }
