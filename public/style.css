@@ -785,5 +785,10 @@ footer button:hover i {
     	top: 50%;
     	transform: translateY(-50%);
 	}
+
+	#navbarNav > ul > li.nav-item.dropdown > ul > li:nth-child(2) > a {
+		right: 30wh;
+	}
+	
 	
 }
