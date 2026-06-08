@@ -774,20 +774,18 @@ footer button:hover i {
 	}
 
 	.dropdown-item {
-	position: relative;
+	
     display: flex;
     justify-content: space-between;
     align-items: center;
 	}
 
 	#navbarNav > ul > li.nav-item.dropdown > ul > li:nth-child(1) > a {
-		position: absolute;
-		right: 70vw;
+	
 	}
 
 	#navbarNav > ul > li.nav-item.dropdown > ul > li:nth-child(2) > a {
-		position: absolute;
-		right: 50vw;
+		
 	}
 
 }
