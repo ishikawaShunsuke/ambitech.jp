@@ -1,10 +1,10 @@
 
 const scroll_to_top_btn = document.querySelector('button.arrow');
-const down = document.querySelector('#down');
 const btn = document.querySelector('.toggle-btn');
 const loading = document.querySelector('.loading');
 const nav = document.getElementById('navbarNav');
 const toggler = document.querySelector('.navbar-toggler');
+const more = document.querySelector('.nav-item.dropdown');
 
 toggler.addEventListener('click', () => {
     const expanded = toggler.getAttribute('aria-expanded') === 'true';
@@ -28,6 +28,16 @@ document.addEventListener('click', (e) => {
 		btn.classList.remove('open');
     }
 });
+
+more.addEventListener('click', () => {
+	/*const more = document.querySelector('.nav-link.dropdown-toggle');*/
+	const down = document.querySelector('#down');
+	const expanted =  more.getAttribute('aria-expanded') === 'true';
+	if(expanted) {
+    	down.style.transform = 'rotate(180deg)'
+	}
+}});
+
 
 //クリックイベントを追加
 scroll_to_top_btn.addEventListener('click', scroll_to_top);
