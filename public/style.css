@@ -777,11 +777,9 @@ footer button:hover i {
     justify-content: space-between;
     align-items: center;
 	}*/
-
-	
 	
 	#navbarNav > ul > li.nav-item.dropdown > ul > li:nth-child(1) > a > i {
-			margin-left: 82%;
+			margin-left: 57%;
 	}
 	#navbarNav > ul > li.nav-item.dropdown > ul > li:nth-child(2) > a > i {
 			margin-left: 57%;
