@@ -772,7 +772,8 @@ footer button:hover i {
 	#navbarNav a {
 		margin: 7px 0;
 	}
-	
+
+	.nav-link,
 	.dropdown-item {
     	display: flex;
     	justify-content: space-between;
