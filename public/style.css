@@ -778,10 +778,10 @@ footer button:hover i {
     align-items: center;
 	}*/
 	
-	#navbarNav > ul > li.nav-item.dropdown > ul > li:nth-child(1) > a > i {
+	#navbarNav > ul > li.nav-item.dropdown > ul > li:nth-child(1) > a > i::before {
 			margin-left: 70wh;
 	}
-	#navbarNav > ul > li.nav-item.dropdown > ul > li:nth-child(2) > a > i {
+	#navbarNav > ul > li.nav-item.dropdown > ul > li:nth-child(2) > a > i::before {
 			margin-left: 70wh;
 	}
 }
