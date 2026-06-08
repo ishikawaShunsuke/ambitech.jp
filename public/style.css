@@ -773,13 +773,18 @@ footer button:hover i {
 		margin: 7px 0;
 	}
 
-	.dropdown-item {
-	
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+	dropdown-menu .dropdown-item {
+		width: 100%;
+    	display: flex;
+    	justify-content: space-between;
+    	align-items: center;
+		padding-right: 1.5rem;
 	}
 
+	.dropdown-menu .dropdown-item i {
+   		font-size: 1rem;
+	}
+	
 	#navbarNav > ul > li.nav-item.dropdown > ul > li:nth-child(1) > a {
 	
 	}
