@@ -789,7 +789,12 @@ footer button:hover i {
 	}
 
 	#navbarNav > ul > li.nav-item.dropdown > ul > li:nth-child(2) > a {
-		font-size: 0.8rem;
+		position: relative;
+	}
+
+	#navbarNav > ul > li.nav-item.dropdown > ul > li:nth-child(2) > a > i {
+		position: absolute;
+		left: 70%;
 	}
 
 }
