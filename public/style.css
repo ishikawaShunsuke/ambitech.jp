@@ -782,7 +782,7 @@ footer button:hover i {
 	}
 
 	.dropdown-menu .dropdown-item i {
-   		font-size: 1rem;
+   		margin-left: 30wv;
 	}
 	
 	#navbarNav > ul > li.nav-item.dropdown > ul > li:nth-child(1) > a {
