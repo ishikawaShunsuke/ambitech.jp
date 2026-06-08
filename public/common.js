@@ -36,7 +36,7 @@ more.addEventListener('click', () => {
 	if(expanted) {
     	down.style.transform = 'rotate(180deg)';
 	}
-}});
+});
 
 
 //クリックイベントを追加
