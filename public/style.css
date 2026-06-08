@@ -780,11 +780,11 @@ footer button:hover i {
     	align-items: center;
 	}
 	
-	#navbarNav > ul > li.nav-item.dropdown > ul > li:nth-child(1) > a {
+	#navbarNav > ul > li.nav-item.dropdown > ul > li:nth-child(1) > a > i {
 	
 	}
 
-	#navbarNav > ul > li.nav-item.dropdown > ul > li:nth-child(2) > a > i {
+	.dropdown > ul > li > a > i {
 		margin-left: 40vw;
 	}
 
