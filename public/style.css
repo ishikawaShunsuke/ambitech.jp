@@ -773,11 +773,15 @@ footer button:hover i {
 		margin: 7px 0;
 	}
 
-	.nav-link,
 	.dropdown-item {
-    	display: flex;
-    	justify-content: space-between;
-    	align-items: center;
+    	potision: relative;
+	}
+
+	.dropdown-item i {
+    	position: absolute;
+    	right: 70%;
+    	top: 50%;
+    	transform: translateY(-50%);
 	}
 	
 }
