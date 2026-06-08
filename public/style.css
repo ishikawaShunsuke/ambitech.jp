@@ -781,7 +781,7 @@ footer button:hover i {
 	}
 	
 	#navbarNav > ul > li.nav-item.dropdown > ul > li > a > i {
-		margin-left: 40vw;
+		margin-left: 40vw !important;
 	}
 
 }
