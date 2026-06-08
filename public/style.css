@@ -775,8 +775,6 @@ footer button:hover i {
 
 	.dropdown-item {
     	potision: relative;
-		display: block;  
-    	width: 100%; 
 	}
 
 	.dropdown-item i {
