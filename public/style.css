@@ -778,7 +778,6 @@ footer button:hover i {
     	display: flex;
     	justify-content: space-between;
     	align-items: center;
-		padding-right: 1.5rem;
 	}
 
 	.dropdown-menu .dropdown-item i {
@@ -790,7 +789,7 @@ footer button:hover i {
 	}
 
 	#navbarNav > ul > li.nav-item.dropdown > ul > li:nth-child(2) > a {
-		margin-right: 80wv;
+		font-size: 0.8rem;
 	}
 
 }
