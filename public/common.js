@@ -34,7 +34,7 @@ more.addEventListener('click', () => {
 	const down = document.querySelector('#down');
 	const expanted =  more.getAttribute('aria-expanded') === 'true';
 	if(expanted) {
-    	down.style.transform = 'rotate(180deg)'
+    	down.style.transform = 'rotate(180deg)';
 	}
 }});
 
