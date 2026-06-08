@@ -29,14 +29,13 @@ document.addEventListener('click', (e) => {
     }
 });
 
-more.addEventListener('click', () => {
-	/*const more = document.querySelector('.nav-link.dropdown-toggle');*/
+/*more.addEventListener('click', () => {
 	const down = document.querySelector('#down');
-	const expanted =  more.getAttribute('aria-expanded') === 'true';
+	const expanted = more.getAttribute('aria-expanded') === 'true';
 	if(expanted) {
     	down.style.transform = 'rotate(180deg)';
 	}
-});
+});*/
 
 
 //クリックイベントを追加
