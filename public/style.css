@@ -779,12 +779,9 @@ footer button:hover i {
 	}*/
 	
 	#navbarNav > ul > li.nav-item.dropdown > ul > li:nth-child(1) > a > i {
-			margin-left: 57%;
+			margin-left: 70vh;
 	}
 	#navbarNav > ul > li.nav-item.dropdown > ul > li:nth-child(2) > a > i {
-			margin-left: 57%;
-	}
-	#navbarNav > ul > li.nav-item.dropdown > ul > li:nth-child(3) > a > i {
-			margin-left: 63%;
+			margin-left: 70vh;
 	}
 }
