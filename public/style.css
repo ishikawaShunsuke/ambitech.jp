@@ -782,7 +782,7 @@ footer button:hover i {
 	}
 
 	.dropdown-menu .dropdown-item i {
-   		margin-right: 30wv;
+   		
 	}
 	
 	#navbarNav > ul > li.nav-item.dropdown > ul > li:nth-child(1) > a {
@@ -790,7 +790,7 @@ footer button:hover i {
 	}
 
 	#navbarNav > ul > li.nav-item.dropdown > ul > li:nth-child(2) > a {
-		
+		margin-right: 80wv;
 	}
 
 }
