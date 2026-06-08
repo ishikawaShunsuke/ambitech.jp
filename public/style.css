@@ -775,11 +775,13 @@ footer button:hover i {
 
 	.dropdown-item {
     	potision: relative;
+		display: block;  
+    	width: 100%; 
 	}
 
 	.dropdown-item i {
     	position: absolute;
-    	right: 70%;
+    	right: 60wh;
     	top: 50%;
     	transform: translateY(-50%);
 	}
