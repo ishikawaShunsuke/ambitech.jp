@@ -774,15 +774,17 @@ footer button:hover i {
 	}
 
 	.dropdown-item {
-    	potision: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 	}
 
-	.dropdown-item i {
-    	position: absolute;
-    	right: 50wh;
-    	top: 50%;
-    	transform: translateY(-50%);
+	#navbarNav > ul > li.nav-item.dropdown > ul > li:nth-child(1) > a {
+		right: 70vw;
 	}
-	
+
+	#navbarNav > ul > li.nav-item.dropdown > ul > li:nth-child(2) > a {
+		right: 50vw;
+	}
 	
 }
